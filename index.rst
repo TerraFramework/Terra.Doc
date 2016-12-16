@@ -27,4 +27,5 @@ Indices and tables
    :maxdepth: 2
    :caption: Terra Hakkında
    :glob:
+   *
 
