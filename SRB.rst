@@ -12,6 +12,8 @@ Terra.SRB Paketini PackageManager Console' dan aşağıdaki komutu yazarak indir
 
 Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.SRB* yi aratarak ta Terra.SRB yi bulabilirsiniz.
 
+.._Baslarken: www.google.com.tr
+
 
     
 Özellikler
