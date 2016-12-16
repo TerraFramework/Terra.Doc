@@ -1,7 +1,7 @@
 SRB
 ========
 
-Terra.Framework içerisinde cache mekanızmasının çalışmasını sağlayan katmandır.
+Terra.Framework içerisinde cache mekanizmasının çalışmasını sağlayan katmandır.
 
 Kurulum
 --------
