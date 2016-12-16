@@ -19,14 +19,19 @@ Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra
 Kullanımı
 ---------
 Açtığınız ASP.NET Core Web uygulamasının startup.cs dosyasına aşağıdaki şekilde ekleyiniz.
+
 .. image:: startup.PNG 
 
 Daha sonra herhangi bir controller'ın constructorı içinde şekildeki gibi implemente ediyoruz.
+
 .. image:: controller.PNG
 
 Artık terra.srb' yi kullanabiliriz. Hemen aşağıdaki örnekte olduğu gibi.
+
 .. image:: set.PNG
+
 Yukarıda resimde set ettik bir de *get* edip *set* ettiğimiz değeri çağıralım.
+
 .. image:: get.PNG
 
 
