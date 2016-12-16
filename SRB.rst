@@ -4,9 +4,11 @@ SRB
 Kurulum
 --------
 
-Install $project by running:
+Install the package with pip::
 
-    install project
+    $ pip install read-the-docs-template
+    
+    
 Özellikler
 --------
 
