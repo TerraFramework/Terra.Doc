@@ -1,4 +1,4 @@
-Authors
+Apollo
 -------
 
 * Eric (New contributor)
