@@ -1,14 +1,21 @@
 Başlarken
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Kurulum
+--------
 
-Look how easy it is to use:
+Terra.SRB Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-    import project
-    # Get your stuff done
-    project.do_stuff()
+    $ Install-Package Terra.SRB -Version 1.0.0-pre-alpha -Source http://10.10.0.237/nuget/Default
+
+Ve ya
+Visual Studio da aşağıdaki görselleri takip ederek indirebilirsiniz.
+
+Visual Studio=>Tools=>Manage NuGet Packages for Solution.. seçtikten sonra
+
+.. image:: srb.PNG
+
+Yukarıdaki işlemleri yaptıktan sonra çıkan ekranda arama yerine *terra.srb* yazınca terra.srb karşınıza çıkacaktır. Install dedikten sonra Terra.SRB kullanıma hazırdır.
 Özellikler
 --------
 
