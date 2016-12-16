@@ -10,6 +10,10 @@ Terra.SRB Paketini PackageManager Console' dan aşağıdaki komutu yazarak indir
 
 Ve ya
 Visual Studio da aşağıdaki görselleri takip ederek indirebilirsiniz.
+
+Visual Studio=>Tools=>Manage NuGet Packages for Solution.. seçtikten sonra
+
+..image::/
     
     
 Özellikler
