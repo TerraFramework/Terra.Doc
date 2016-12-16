@@ -11,18 +11,20 @@ Welcome to Read the Docs Template's documentation!
 
 Contents:
 
-.. toctree::
-   :maxdepth: 2
-   :glob:
 
-   *
+   
 
 
 
 Indices and tables
 ==================
 
-* :ref:`genindex`
+* :ref:`Terra_Hakkında`
 * :ref:`modindex`
 * :ref:`search`
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Terra Hakkında
+   :glob:
 
