@@ -30,7 +30,11 @@ Artık terra.srb' yi kullanabiliriz. Hemen aşağıdaki örnekte olduğu gibi.
 
 .. image:: set.PNG
 
-Yukarıda resimde set ettik bir de *get* edip *set* ettiğimiz değeri çağıralım.
+Viewlarda kullanabilmek için açtığımız projenin Views/Shared klasörünün altındaki *_ViewImports.cshtml* dosyasında aşağıda yazan satırı ekliyoruz.
+
+.. image:: view.PNG
+
+Şimdi bir de bir tane View da ettik bir de  *set* ettiğimiz *get* edip değeri çağıralım.
 
 .. image:: get.PNG
 
