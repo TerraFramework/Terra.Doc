@@ -14,6 +14,8 @@ Visual Studio da aşağıdaki görselleri takip ederek indirebilirsiniz.
 Visual Studio=>Tools=>Manage NuGet Packages for Solution.. seçtikten sonra
 
 .. image:: srb.PNG
+
+Yukarıdaki işlemleri yaptıktan sonra çıkan arama ekranında *terra.srb* yazınca terra.srb karşınıza çıkacaktır. Install dedikten sonra Terra.SRB kullanıma hazırdır.
     
     
 Özellikler
