@@ -1,6 +1,6 @@
 SRB
 =========================
-İnstallation
+Installation
 -------------------------
 
 Hubble
