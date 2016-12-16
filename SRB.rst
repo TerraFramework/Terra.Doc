@@ -1,6 +1,8 @@
 SRB
 ========
 
+Terra.Framework içerisinde cache mekanızmasının çalışmasını sağlayan katmandır.
+
 Kurulum
 --------
 
@@ -15,7 +17,7 @@ Visual Studio=>Tools=>Manage NuGet Packages for Solution.. seçtikten sonra
 
 .. image:: srb.PNG
 
-Yukarıdaki işlemleri yaptıktan sonra çıkan arama ekranında *terra.srb* yazınca terra.srb karşınıza çıkacaktır. Install dedikten sonra Terra.SRB kullanıma hazırdır.
+Yukarıdaki işlemleri yaptıktan sonra çıkan ekranda arama yerine *terra.srb* yazınca terra.srb karşınıza çıkacaktır. Install dedikten sonra Terra.SRB kullanıma hazırdır.
     
     
 Özellikler
