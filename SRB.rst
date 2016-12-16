@@ -10,17 +10,27 @@ Terra.SRB Paketini PackageManager Console' dan aşağıdaki komutu yazarak indir
 
     $ Install-Package Terra.SRB -Version 1.0.0-pre-alpha -Source http://10.10.0.237/nuget/Default
 
-Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.SRB* yi aratarak ta Terra.SRB yi bulabilirsiniz.
+Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.SRB* yi aratarak Terra.SRB yi bulup Terra.SRB'yi indirebilirsiniz.
 
 .. _Baslarken: http://terradoc.readthedocs.io/en/latest/Baslarken.html
 
 
     
-Özellikler
---------
+Kullanımı
+---------
+Açtığınız ASP.NET Core Web uygulamasının startup.cs dosyasına aşağıdaki şekilde ekleyiniz.
+.. image:: startup.PNG 
 
-- Be awesome
-- Make things faster
+Daha sonra herhangi bir controller'ın constructorı içinde şekildeki gibi implemente ediyoruz.
+.. image:: controller.PNG
+
+Artık terra.srb' yi kullanabiliriz. Hemen aşağıdaki örnekte olduğu gibi.
+.. image:: set.PNG
+Yukarıda resimde set ettik bir de *get* edip *set* ettiğimiz değeri çağıralım.
+.. image:: get.PNG
+
+
+
 
 
 
