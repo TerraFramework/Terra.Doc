@@ -10,15 +10,9 @@ Terra.SRB Paketini PackageManager Console' dan aşağıdaki komutu yazarak indir
 
     $ Install-Package Terra.SRB -Version 1.0.0-pre-alpha -Source http://10.10.0.237/nuget/Default
 
-Ve ya
-Visual Studio da aşağıdaki görselleri takip ederek indirebilirsiniz.
+Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.SRB* yi aratarak ta Terra.SRB yi bulabilirsiniz.
 
-Visual Studio=>Tools=>Manage NuGet Packages for Solution.. seçtikten sonra
 
-.. image:: srb.PNG
-
-Yukarıdaki işlemleri yaptıktan sonra çıkan ekranda arama yerine *terra.srb* yazınca terra.srb karşınıza çıkacaktır. Install dedikten sonra Terra.SRB kullanıma hazırdır.
-    
     
 Özellikler
 --------
