@@ -34,7 +34,7 @@ Viewlarda kullanabilmek için açtığımız projenin Views/Shared klasörünün
 
 .. image:: view.PNG
 
-Şimdi bir de bir tane View da ettik bir de  *set* ettiğimiz *get* edip değeri çağıralım.
+Şimdi bir de bir tane View da *set* ettiğimiz *get* edip değeri çağıralım.
 
 .. image:: get.PNG
 
