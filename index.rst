@@ -18,7 +18,7 @@ Welcome to Read the Docs Template's documentation!
    :maxdepth: 2
    :caption: Terra Hakkında
    
-   Başlarken
+   Baslarken
    
 .. _nuget-paketleri-hakkinda:
 .. toctree::
