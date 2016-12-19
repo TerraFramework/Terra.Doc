@@ -9,15 +9,25 @@ Selam Canım :)
 Welcome to Read the Docs Template's documentation!
 ==================================================
 
-Contents:
 
+* :ref:`terra-hakkinda`
+* :ref:`nuget-paketleri-hakkinda`
+.._terra-hakkinda
 .. toctree::
    :maxdepth: 2
-   :glob:
+   :caption: Terra Hakkında
    
+   Başlarken
    
-   *
+.._nuget-paketleri-hakkinda
+.. toctree::
+   :maxdepth: 2
+   :caption: Nuget Paketleri Hakkında
    
+   Apollo
+   SRB
+
+
 
 
 
