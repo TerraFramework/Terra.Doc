@@ -20,7 +20,7 @@ Kullanımı
 ---------
 
 Öncelikle Voyager' ı kullanmak istediğimiz projeye bir tane *Resources* klasörü ekliyoruz. Ve içine istediğimiz dile ait olan json dosyasını ekliyoruz.  tr-TR. json ve ya en-EN.json gibi.
-Daha sonra starup içerisinde aşağıdaki kodu ekliyoruz:
+Daha sonra starup içerisinde aşağıdaki kodu ekliyoruz::
     public void ConfigureServices(IServiceCollection services)
             {
                 // Add framework services.
@@ -36,7 +36,7 @@ Daha sonra starup içerisinde aşağıdaki kodu ekliyoruz:
             {
                 _voyager = voyager;
             }
-  Örnek kullanım ise şu şekildedir.
+  Örnek kullanım ise şu şekildedir.:
       public IActionResult Index()
             {
                 var txt = _voyager.Get("test");
