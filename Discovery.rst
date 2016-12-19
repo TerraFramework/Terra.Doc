@@ -1,40 +1,28 @@
 Discovery
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
-Özellikler
---------
-
-- Be awesome
-- Make things faster
+Terra.Framework içerisinde cache mekanizmasının çalışmasını sağlayan katmandır.
 
 Kurulum
-------------
+--------
 
-Install $project by running:
+Terra.SRB Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-    install project
+    $ Install-Package Terra.SRB -Version 1.0.0-pre-alpha -Source http://10.10.0.237/nuget/Default
 
-İletişim
-----------
+Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.SRB* yi aratarak Terra.SRB yi bulup Terra.SRB'yi indirebilirsiniz.
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+.. _Baslarken: http://terradoc.readthedocs.io/en/latest/Baslarken.html
 
-Destek
--------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+    
+Kullanımı
+---------
 
-Lisans
--------
 
-The project is licensed under the BSD license.
+
+
+
+
+
+
