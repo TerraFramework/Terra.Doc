@@ -1,40 +1,18 @@
 Mission Control
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
-Özellikler
+Kurulum
 --------
 
-- Be awesome
-- Make things faster
+Terra.Hubble Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-Kurulum
-------------
+   Install-Package Terra.Hubble -Version 1.0.0-pre-alpha -Source http://10.10.0.237/nuget/Default/
+    
+Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.Hubble* ı aratarak Terra.Hubble ı bulup Terra.Hubble'ı indirebilirsiniz.
 
-Install $project by running:
+.. _Baslarken: http://terradoc.readthedocs.io/en/latest/Baslarken.html
 
-    install project
 
-İletişim
-----------
-
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
-
-Destek
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
-
-Lisans
--------
-
-The project is licensed under the BSD license.
+    
+Kullanımı
+---------
