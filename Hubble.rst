@@ -2,6 +2,8 @@
 Hubble
 ========
 
+Terra.Framework içerisinde loglama işleminin yapıldığı bölümdür.
+
 Kurulum
 --------
 
