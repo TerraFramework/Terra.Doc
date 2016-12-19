@@ -39,6 +39,7 @@ Burada önemli olan kısım kendi oluşturduğunuz resources klasörünün adı 
            }
            
 Örnek kullanım ise şu şekildedir.::
+
     public IActionResult Index()
           {
               var txt = _voyager.Get("test");
