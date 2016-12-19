@@ -36,15 +36,19 @@ Daha sonra herhangi bir controller'ın constructorı içinde şekildeki gibi imp
 
 Artık terra.srb' yi kullanabiliriz. Hemen aşağıdaki örnekte olduğu gibi.
 
-.. image:: set.PNG
+     public IActionResult Index()
+            {
+                _srb.Set("test", "TEST");
+                return View();
+            }
 
 Viewlarda kullanabilmek için açtığımız projenin Views/Shared klasörünün altındaki *_ViewImports.cshtml* dosyasında aşağıda yazan satırı ekliyoruz.
 
-.. image:: view.PNG
+    @inject Terra.SRB.ISRB _srb
 
 Şimdi bir de bir tane View da *set* ettiğimiz *get* edip değeri çağıralım.
 
-.. image:: get.PNG
+    @_srb.Get("test")
 
 
 
