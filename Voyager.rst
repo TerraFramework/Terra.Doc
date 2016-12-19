@@ -30,19 +30,19 @@ Daha sonra starup içerisinde aşağıdaki kodu ekliyoruz::
                 });
             }
 Burada önemli olan kısım kendi oluşturduğunuz resources klasörünün adı ile burada yazdığınız klasör adının birbiriyle aynı olmasıdır. Startup'ta ekledikten sonra istediğimiz controller içerisinde aşağıdaki örnekte olduğu gibi implemente edebiliriz.:
-     private IVoyager _voyager;
-            public HomeController(IVoyager voyager)
-            {
-                _voyager = voyager;
-            }
+    private IVoyager _voyager;
+           public HomeController(IVoyager voyager)
+           {
+               _voyager = voyager;
+           }
 Örnek kullanım ise şu şekildedir.:
-      public IActionResult Index()
-            {
-                var txt = _voyager.Get("test");
-                ViewData["Message"] = txt;
-                return View();
-            }
- 
+    public IActionResult Index()
+          {
+              var txt = _voyager.Get("test");
+              ViewData["Message"] = txt;
+              return View();
+           }
+
  
 
 
