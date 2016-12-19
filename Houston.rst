@@ -1,7 +1,7 @@
 Houston
 ========
 
-Terra.Framework içerisinde datalarla ilgili tüm işlerin yapıldığı katmandır.
+Terra.Framework içerisinde güvenlik mekanızmasının işlediği bölümdür.
 
 Kurulum
 --------
