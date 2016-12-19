@@ -20,11 +20,11 @@ Kullanımı
 ---------
 Açtığınız ASP.NET Core Web uygulamasının startup.cs dosyasına aşağıdaki şekilde ekleyiniz.::
 
-public void ConfigureServices(IServiceCollection services)
-        {
-            // Add framework services.
-            services.AddSRB();
-        }
+    public void ConfigureServices(IServiceCollection services)
+            {
+                // Add framework services.
+                services.AddSRB();
+            }
 
 Daha sonra herhangi bir controller'ın constructorı içinde şekildeki gibi implemente ediyoruz.::
 
