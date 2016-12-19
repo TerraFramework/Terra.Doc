@@ -28,11 +28,11 @@ Açtığınız ASP.NET Core Web uygulamasının startup.cs dosyasına aşağıda
 
 Daha sonra herhangi bir controller'ın constructorı içinde şekildeki gibi implemente ediyoruz.::
 
-private ISRB _srb;
-        public HomeController(ISRB srb)
-        {
-            _srb = srb;
-        }
+    private ISRB _srb;
+            public HomeController(ISRB srb)
+            {
+                _srb = srb;
+            }
 
 Artık terra.srb' yi kullanabiliriz. Hemen aşağıdaki örnekte olduğu gibi.
 
