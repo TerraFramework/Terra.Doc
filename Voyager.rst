@@ -1,40 +1,21 @@
 Voyager
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
-Özellikler
---------
-
-- Be awesome
-- Make things faster
+Terra.Framework içerisinde tercih edilen dile göre localization yapan bölümdür.
 
 Kurulum
-------------
+--------
 
-Install $project by running:
+Terra.Discovery Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-    install project
+    Install-Package Terra.Voyager -Version 1.0.0-pre-alpha -Source http://10.10.0.237/nuget/Default/
+    
+Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.Discovery* yi aratarak Terra.Discovery yi bulup Terra.Discovery'yi indirebilirsiniz.
 
-İletişim
-----------
+.. _Baslarken: http://terradoc.readthedocs.io/en/latest/Baslarken.html
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
 
-Destek
--------
+    
+Kullanımı
+---------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
-
-Lisans
--------
-
-The project is licensed under the BSD license.
