@@ -18,13 +18,21 @@ Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra
     
 Kullanımı
 ---------
-Açtığınız ASP.NET Core Web uygulamasının startup.cs dosyasına aşağıdaki şekilde ekleyiniz.
+Açtığınız ASP.NET Core Web uygulamasının startup.cs dosyasına aşağıdaki şekilde ekleyiniz.::
 
-.. image:: startup.PNG 
+public void ConfigureServices(IServiceCollection services)
+        {
+            // Add framework services.
+            services.AddSRB();
+        }
 
-Daha sonra herhangi bir controller'ın constructorı içinde şekildeki gibi implemente ediyoruz.
+Daha sonra herhangi bir controller'ın constructorı içinde şekildeki gibi implemente ediyoruz.::
 
-.. image:: controller.PNG
+private ISRB _srb;
+        public HomeController(ISRB srb)
+        {
+            _srb = srb;
+        }
 
 Artık terra.srb' yi kullanabiliriz. Hemen aşağıdaki örnekte olduğu gibi.
 
