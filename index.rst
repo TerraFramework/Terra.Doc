@@ -12,14 +12,15 @@ Welcome to Read the Docs Template's documentation!
 
 * :ref:`terra-hakkinda`
 * :ref:`nuget-paketleri-hakkinda`
-.._terra-hakkinda:
+
+.. _terra-hakkinda:
 .. toctree::
    :maxdepth: 2
    :caption: Terra Hakkında
    
    Başlarken
    
-.._nuget-paketleri-hakkinda:
+.. _nuget-paketleri-hakkinda:
 .. toctree::
    :maxdepth: 2
    :caption: Nuget Paketleri Hakkında
