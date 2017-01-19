@@ -18,6 +18,21 @@ Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra
     
 Kullanımı
 ---------
+Startup.cs dosyasında ConfigureServices metodunda Discovery eklememiz gerekmektedir.::      
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDiscovery(new DiscoveryConfiguration
+            {
+                DefaultSettings = new DbSettings(),
+                AuditEnable = true,
+                AuditUserProvider = new AuditUserProvider(),
+                EnableEntityLogger = true,
+                CreateEntityLoggerTable = true
+            });
+            // Add framework services.
+            services.AddMvc();
+        }
 
 Controller classında kullanımı aşağıdaki gibidir::
 
@@ -46,3 +61,21 @@ Controller classında kullanımı aşağıdaki gibidir::
             }
         }
     
+MyClass.cs::
+
+        using Terra.Discovery.Types;
+        public class MyClass : DiscoveryEntity
+        {
+            public string Name { get; set; }
+            public string Surname { get; set; }
+            public override void Map(ModelBuilder modelBuilder)
+            {
+                modelBuilder.Entity<MyClass>(opt =>
+                {
+                    //opt.ToTable("MyClass"); Veritabanında tablo var ise burada tablonun ismini yazıyoruz.
+                    opt.HasKey(x => x.Id);
+                    opt.HasAlternateKey(x => x.AutoId);
+                    opt.Property(x => x.AutoId).UseSqlServerIdentityColumn();
+                });
+            } 
+        }
