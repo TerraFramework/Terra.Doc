@@ -50,3 +50,13 @@ Startup.cs ConfigureServices metodunda Hubble'ın ayarlarını yapmanız gerekme
                return View();
            }
        }
+       
+       
++------------+------------+-----------+ 
+|EnableSystemLog   | Header 2   | Header 3  | 
++============+============+===========+ 
+| EnableNavigatingLog  | column 2   | column 3  | 
++------------+------------+-----------+ 
+| EnableExceptionHandling  | Cells may span columns.| 
++------------+------------+-----------+ 
+
