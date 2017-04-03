@@ -1,7 +1,7 @@
 Paketler
 ========
 
-:Apollo Bootstrap altyapılı User Interface katmanıdır.
+:Apollo: Bootstrap altyapılı User Interface katmanıdır.
 :Discovery: Data işlemlerin bulunduğu katmandır. 
 :Houston: Yetkilendirme ve login işlemlerinin gerçekleştiği katmandır.
 :Hubble: Loglama işlemlerinin yapıldığı katmandır.
