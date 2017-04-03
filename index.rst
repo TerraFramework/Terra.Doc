@@ -13,7 +13,7 @@ Herkese Merhaba :)
    :maxdepth: 2
    :caption: Terra Hakkında
    
-   Baslarken
+   Getting_Started
    
 .. _nuget-paketleri-hakkinda:
 .. toctree::
