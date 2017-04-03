@@ -9,3 +9,14 @@ Paketler
 :SRB: Terranın cache mekanizmasının çalışmasını sağlayan katmandır.
 :Voyager: Tercih edilen dile göre localization yapan katmandır.
 
+   Apollo
+   Discovery
+   Houston
+   Hubble
+   MissionControl
+   Nucleus
+   PathFinder
+   SRB
+   Stardust
+   Voyage
+
