@@ -1,4 +1,4 @@
-Başlarken
+Getting_Started
 ========
 
 Kurulum
