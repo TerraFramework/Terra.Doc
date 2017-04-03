@@ -9,6 +9,12 @@ Paketler
 :SRB: Terranın cache mekanizmasının çalışmasını sağlayan katmandır.
 :Voyager: Tercih edilen dile göre localization yapan katmandır.
 
+.. _nuget-paketleri-hakkinda:
+.. toctree::
+   :maxdepth: 2
+   :caption: Nuget Paketleri Hakkında
+   
+   Paketler
    Apollo
    Discovery
    Houston
@@ -18,5 +24,5 @@ Paketler
    PathFinder
    SRB
    Stardust
-   Voyage
+   Voyager
 
