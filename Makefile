@@ -49,18 +49,10 @@ help:
 clean:
 	rm -rf $(BUILDDIR)/*
 
-auto:
-	sphinx-autobuild -p 8888 $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
-
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
-
-livehtml:
-	sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
@@ -93,17 +85,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/sdf.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/TheRestructuredTextBook.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/sdf.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/TheRestructuredTextBook.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/sdf"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/sdf"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/TheRestructuredTextBook"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/TheRestructuredTextBook"
 	@echo "# devhelp"
 
 epub:
