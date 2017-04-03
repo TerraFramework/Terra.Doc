@@ -9,7 +9,7 @@ Kurulum
 
 Terra.Hubble Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-   Install-Package Terra.Hubble -Version 1.0.0-pre-alpha -Source http://nuget.bilgeadam.com/nuget/Default/
+   Install-Package Terra.Hubble -Version 1.0.11-pre-alpha -Source http://nuget.bilgeadam.com/nuget/Default/
     
 Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.Hubble* ı aratarak Terra.Hubble ı bularak indirebilirsiniz.
 
@@ -18,25 +18,35 @@ Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra
 ::
 
    public void ConfigureServices(IServiceCollection services)
-           {
-      services.AddHubble(new Terra.Hubble.Configuration.HubbleConfiguration
-      {
-            EnableNavigatingLog = true,
-      });
-      //OPTIONAL
-      services.AddHubbleMonitoring(new HubbleMonitoringConfiguration
-      {
-          Key = "KEY",
-          Secret = "SECRET",
-          MonitoringUrl = "url"
-      }); 
-      }
-      public void Configure(IApplicationBuilder app)
-     {
+   {
+            //Verilen path’e loglama yapar.
+            services.AddHubble(new HubbleConfiguration()
+            {
+                LogsFolder = "log",
+                EnableSystemLogs = false,
+                EnableNavigatingLog = true
+            });
 
-         app.UseHubble();
+            //OPTIONAL
+            services.AddHubble(new HubbleConfiguration 
+            { 
+            EnableNavigatingLog = true 
+            });
 
-     }
+            services.AddHubbleMonitoring(new HubbleMonitoringConfiguration
+            {
+                Key = "KEY",
+                Secret = "SECRET",
+                MonitoringUrl = "url"
+            }); 
+
+
+   }
+
+	public void Configure(IApplicationBuilder app)
+   {
+            app.UseHubble();     
+   }
 
 
     
@@ -56,7 +66,7 @@ Kullanımı
            }
            public IActionResult Index()
            {
-               _hubble.Log("Loglanan veri");
+               _hubble.Log("Add Operaton Success");
                return View();
            }
        }
@@ -66,11 +76,17 @@ Kullanımı
 
       
        
-+-------------------------+------------+-----------+ 
-|EnableSystemLog          | Header 2   | Header 3  | 
-+=========================+============+===========+ 
-| EnableNavigatingLog     | column 2   | column 3  | 
-+-------------------------+------------+-----------+ 
-| EnableExceptionHandling | Cells may span columns.| 
-+-------------------------+------------+-----------+ 
++-------------------------+-------------------------------------------------+
+| Özellikler              | Açıklama                                        |  
++=========================+=================================================+
+| EnableSystemLog         |                                                 | 
++-------------------------+------------+-----------+------------------------+ 
+| EnableNavigatingLog     | .NET’ in tüm loglarını Hubble üzerinden loglar. | 
++-------------------------+------------+------------------------------------+ 
+| EnableExceptionHandling | Exceptionları yakalar.                          | 
++-------------------------+------------+-----------+------------------------+ 
+| LogsFolder              |                                                 | 
++-------------------------+------------+-----------+------------------------+ 
+| MaxfileSize             |                                                 | 
++-------------------------+------------+-----------+------------------------+ 
 
