@@ -62,21 +62,7 @@ Kullanımı
                 }
 
  
-::
-   public class HomeController : Controller
-          {
-              private IHubble _hubble;
 
-              public HomeController(IHubble hubble)
-              {
-                  _hubble = hubble;
-              }
-              public IActionResult Index()
-              {
-                  _hubble.Log("Loglanan veri");
-                  return View();
-              }
-          }
 
       
        
