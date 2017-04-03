@@ -2,40 +2,37 @@
 Nucleus
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
-Özellikler
---------
-
-- Be awesome
-- Make things faster
+Terra.Framework'ün çekirdek alt yapısını,barındıran, katmandır.İçerisinde bulunan,string ve object,extensionlar,sayesinde,bir çok,işlemi kolaylaştırmaktadır.
 
 Kurulum
-------------
+--------
 
-Install $project by running:
+Terra.Nucleus Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-    install project
+   Install-Package Terra.Nucleus -Version 1.0.10-pre-alpha -Source http://nuget.bilgeadam.com/nuget/Default/
+    
+Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.Nucleus* ı aratarak Terra.Nucleus ı bularak indirebilirsiniz.
 
-İletişim
+.. _Baslarken: http://terradoc.readthedocs.io/en/latest/getting_started.html
+
+
+
+    
+Kullanımı
 ----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+ 
+::
 
-Destek
--------
+      Nucleus paketini,projemizde, kullanmak,için,aşşağıdaki referansları eklememiz gerekmektedir
+      
+      using Terra.Nucleus;
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+ 
 
-Lisans
--------
+Metotlar
+----------
+:GetQueryString(object obj): Verilen,objeyi QueryString olarak çevirir. 
+   
+   
 
-The project is licensed under the BSD license.
