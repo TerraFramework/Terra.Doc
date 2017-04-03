@@ -43,8 +43,8 @@ Kullanımı
 ---------
 
    
-::
-public class HomeController : Controller
+ ::
+ public class HomeController : Controller
        {
            private IHubble _hubble;
 
@@ -59,7 +59,7 @@ public class HomeController : Controller
            }
        }
        
-       Properties:
+      
        
 +-------------------------+------------+-----------+ 
 |EnableSystemLog          | Header 2   | Header 3  | 
