@@ -20,17 +20,11 @@ Herkese Merhaba :)
    :maxdepth: 2
    :caption: Nuget Paketleri Hakkında
    
+   HomePage
+   Terminology
+   Architecture
    Packages
-   Apollo
-   Discovery
-   Houston
-   Hubble
-   MissionControl
-   Nucleus
-   PathFinder
-   SRB
-   Stardust
-   Voyager
+   
 
 
 
