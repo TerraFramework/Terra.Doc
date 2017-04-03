@@ -15,27 +15,35 @@ Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra
 
 .. _Baslarken: http://terradoc.readthedocs.io/en/latest/getting_started.html
 
-
-    
-Kullanımı
----------
-Startup.cs ConfigureServices metodunda Hubble'ın ayarlarını yapmanız gerekmektedir.::
-
+::
+public void ConfigureServices(IServiceCollection services)
+        {
    services.AddHubble(new Terra.Hubble.Configuration.HubbleConfiguration
    {
          EnableNavigatingLog = true,
    });
-   
+   //OPTIONAL
    services.AddHubbleMonitoring(new HubbleMonitoringConfiguration
    {
        Key = "KEY",
        Secret = "SECRET",
        MonitoringUrl = "url"
    }); 
+   }
+   public void Configure(IApplicationBuilder app)
+           {
+
+               app.UseHubble();
+
+           }
+
+
+    
+Kullanımı
+---------
 
    
 ::
-
        public class HomeController : Controller
        {
            private IHubble _hubble;
