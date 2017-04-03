@@ -44,7 +44,7 @@ Kullanımı
 ----------
 
  
- ::
+::
 
       public class HomeController : Controller
                 {
