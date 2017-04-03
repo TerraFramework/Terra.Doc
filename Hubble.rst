@@ -43,7 +43,7 @@ Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra
 
    }
 
-	public void Configure(IApplicationBuilder app)
+   public void Configure(IApplicationBuilder app)
    {
             app.UseHubble();     
    }
@@ -79,14 +79,14 @@ Kullanımı
 +-------------------------+-------------------------------------------------+
 | Özellikler              | Açıklama                                        |  
 +=========================+=================================================+
-| EnableSystemLog         |                                                 | 
-+-------------------------+------------+-----------+------------------------+ 
-| EnableNavigatingLog     | .NET’ in tüm loglarını Hubble üzerinden loglar. | 
-+-------------------------+------------+------------------------------------+ 
+| EnableSystemLog         | .NET’ in tüm loglarını Hubble üzerinden loglar. | 
++-------------------------+-------------------------------------------------+ 
+| EnableNavigatingLog     | Bütün sayfa gezinimlerini loglar.               | 
++-------------------------+-------------------------------------------------+ 
 | EnableExceptionHandling | Exceptionları yakalar.                          | 
-+-------------------------+------------+-----------+------------------------+ 
-| LogsFolder              |                                                 | 
-+-------------------------+------------+-----------+------------------------+ 
-| MaxfileSize             |                                                 | 
-+-------------------------+------------+-----------+------------------------+ 
++-------------------------+-------------------------------------------------+ 
+| LogsFolder              | Loglama yapılacak klasörün path'ini set eder.   | 
++-------------------------+-------------------------------------------------+ 
+| MaxfileSize             | Log dosyasının maksimum büyüklüğünü set eder.   | 
++-------------------------+-------------------------------------------------+ 
 
