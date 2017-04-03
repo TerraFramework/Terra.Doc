@@ -44,7 +44,7 @@ Kullanımı
 
    
 ::
-       public class HomeController : Controller
+public class HomeController : Controller
        {
            private IHubble _hubble;
 
