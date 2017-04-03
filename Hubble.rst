@@ -9,7 +9,7 @@ Kurulum
 
 Terra.Hubble Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-   Install-Package Terra.Hubble -Version 1.0.15-pre-alpha -Source http://nuget.bilgeadam.com/nuget/Default/
+   Install-Package Terra.Hubble -Version 1.0.11-pre-alpha -Source http://nuget.bilgeadam.com/nuget/Default/
     
 Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.Hubble* ı aratarak Terra.Hubble ı bularak indirebilirsiniz.
 
