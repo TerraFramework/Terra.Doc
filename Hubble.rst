@@ -2,33 +2,39 @@
 Hubble
 ========
 
-Terra.Framework içerisinde loglama işleminin yapıldığı bölümdür.
+Terra.Framework içerisinde loglama işleminin yapıldığı bölümdür.Ayrıca Hubble.Monitoring.Extension paketi ile. Monitoring uygulamasının çalıştığı api üzerinden loglama yapabilir.
 
 Kurulum
 --------
 
 Terra.Hubble Paketini PackageManager Console' dan aşağıdaki komutu yazarak indirebilirsiniz::
 
-   Install-Package Terra.Hubble -Version 1.0.0-pre-alpha -Source http://10.10.0.237/nuget/Default/
+   Install-Package Terra.Hubble -Version 1.0.0-pre-alpha -Source http://nuget.bilgeadam.com/nuget/Default/
     
 Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra.Hubble* ı aratarak Terra.Hubble ı bularak indirebilirsiniz.
 
-.. _Baslarken: http://terradoc.readthedocs.io/en/latest/Baslarken.html
+.. _Baslarken: http://terradoc.readthedocs.io/en/latest/getting_started.html
 
 
     
 Kullanımı
 ---------
-Projeniz içerisinde *logs* klasörü açarak içine *logs.terra* uzantılı dosya oluşturmalısınız. Loglarımızın tutulacağı dosya burasıdır.
 Startup.cs ConfigureServices metodunda Hubble'ın ayarlarını yapmanız gerekmektedir.::
 
    services.AddHubble(new Terra.Hubble.Configuration.HubbleConfiguration
    {
-         EnableNavigatingLog = false,
+         EnableNavigatingLog = true,
    });
    
+   services.AddHubbleMonitoring(new HubbleMonitoringConfiguration
+   {
+       Key = "KEY",
+       Secret = "SECRET",
+       MonitoringUrl = "url"
+   }); 
+
    
-Controller classında kullanımı.::
+::
 
        public class HomeController : Controller
        {
