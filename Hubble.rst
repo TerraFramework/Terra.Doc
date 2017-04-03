@@ -16,26 +16,26 @@ Ve ya Baslarken_ bölümünde yazılan adımları yaptıysanız NuGet'ten *Terra
 .. _Baslarken: http://terradoc.readthedocs.io/en/latest/getting_started.html
 
 ::
-public void ConfigureServices(IServiceCollection services)
-        {
-   services.AddHubble(new Terra.Hubble.Configuration.HubbleConfiguration
-   {
-         EnableNavigatingLog = true,
-   });
-   //OPTIONAL
-   services.AddHubbleMonitoring(new HubbleMonitoringConfiguration
-   {
-       Key = "KEY",
-       Secret = "SECRET",
-       MonitoringUrl = "url"
-   }); 
-   }
-   public void Configure(IApplicationBuilder app)
+   public void ConfigureServices(IServiceCollection services)
            {
+      services.AddHubble(new Terra.Hubble.Configuration.HubbleConfiguration
+      {
+            EnableNavigatingLog = true,
+      });
+      //OPTIONAL
+      services.AddHubbleMonitoring(new HubbleMonitoringConfiguration
+      {
+          Key = "KEY",
+          Secret = "SECRET",
+          MonitoringUrl = "url"
+      }); 
+      }
+      public void Configure(IApplicationBuilder app)
+              {
 
-               app.UseHubble();
+                  app.UseHubble();
 
-           }
+              }
 
 
     
@@ -43,21 +43,21 @@ Kullanımı
 ---------
 
    
- ::
- public class HomeController : Controller
-       {
-           private IHubble _hubble;
+::
+   public class HomeController : Controller
+          {
+              private IHubble _hubble;
 
-           public HomeController(IHubble hubble)
-           {
-               _hubble = hubble;
-           }
-           public IActionResult Index()
-           {
-               _hubble.Log("Loglanan veri");
-               return View();
-           }
-       }
+              public HomeController(IHubble hubble)
+              {
+                  _hubble = hubble;
+              }
+              public IActionResult Index()
+              {
+                  _hubble.Log("Loglanan veri");
+                  return View();
+              }
+          }
        
       
        
