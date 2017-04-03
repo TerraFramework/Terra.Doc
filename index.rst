@@ -20,7 +20,7 @@ Herkese Merhaba :)
    :maxdepth: 2
    :caption: Nuget Paketleri Hakkında
    
-   Paketler_.
+   Paketler_
    Apollo
    Discovery
    Houston
@@ -32,10 +32,7 @@ Herkese Merhaba :)
    Stardust
    Voyager
 
-.. _Paketler: Packages.rst
-
-
-
+.. _Paketler: http://terradoc.readthedocs.io/tr/latest/Packages.html
 
 
 
