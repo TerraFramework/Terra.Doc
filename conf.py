@@ -35,9 +35,9 @@ else:
     ]
     # Inject mock modules so that we can build the
     # documentation without having the real stuff available
-    from plainbox.vendor import mock
-    for mod_name in modules_to_mock:
-        sys.modules[mod_name] = mock.Mock()
+    #from plainbox.vendor import mock
+    #for mod_name in modules_to_mock:
+     #   sys.modules[mod_name] = mock.Mock()
 
 # If extensions (or modules to document with autodoc) are in another
 # directory, add these directories to sys.path here. If the directory is
