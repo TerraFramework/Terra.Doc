@@ -20,9 +20,13 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 try:
-    import plainbox
-except ImportError as exc:
-    raise SystemExit("plainbox has to be importable")
+    import sphinxjp.themes
+except ImportError:
+    from pkg_resources import get_distribution
+    from setuptools.command import easy_install
+    easy_install.main( ["-U","sphinxjp.themes.basicstrap"] )
+    get_distribution('sphinxjp.themes.basicstrap').activate()
+    import sphinxjp.themes
 else:
     modules_to_mock = [
         'xlsxwriter',
