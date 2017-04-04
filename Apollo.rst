@@ -95,7 +95,7 @@ Datetimepicker
     @Html.Terra().DateTimePicker()
 
 Div
-===
+-------
 ::
 
     @using (Html.Terra().Div().AddCssClass(Columns.Col_Md_12).Begin())
