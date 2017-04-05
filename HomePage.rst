@@ -9,15 +9,19 @@ Core
 --------
 Tüm uygulamada kullanılacak ortak yapıların tanımlandığı bölümdür.
 
+
 Contract
 --------
 Bu yapı projenin API ve UI kısmının kendi arasında haberleşmesini ve diğer uygulamalarında bu API ile iletişime geçebilmesi için gerekli olan yapıdır. İçerisinde Dto ve Interface’leri barındırır. Bu Interface’ler API tarafından implemente edilmektedir.
+
 Data
 --------
 DB ile erişim için gerekli olan yapıdır. Bu yapıyı API kullanarak DTO’ya çevirerek uygulamalara hizmet etmektedir.
+
 API
 --------
 Bu yapı ise uygulamadaki tüm Logiclerin tanımlandığı ve uygulandığı yapıdır. Bu yapı tümüyle Authentication gerektirir. Valid Access Token’ı olmayan hiçbir request’e cevap veeremez.
+
 UI
 --------
 Bu yapı ise Kullanıcıların gördükleri ve kullandıkları yapıdır. API üzerinden data alışverişinde bulunur. Authentication için MissionControl üzerinden Authentication gerektirir.
@@ -26,4 +30,6 @@ Bu yapı ise Kullanıcıların gördükleri ve kullandıkları yapıdır. API ü
 --------
 
 İlk request UI uygulamasına geldikten sonra, otomatik olarak MissionControl üzerine yönlendirilerek Authenticate olması sağlanır. Devamında ise MissionControl üzerinden dönen AccessToken ile, API'lara giderek data alışverişi sağlanır. Devamında kullanıcı aynı sistem içerisindeki başka bir uygulamaya gitmeye çalışırsa yeniden MissionControl üzerine gelir. Bu sefer zaten Authenticate olduğu için, dire AccessToken alarak devam eder. Böylelikle tüm uygulamalar tek bir Authentication ile çalışabilmiş olurlar.
+
+
 
