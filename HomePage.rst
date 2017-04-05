@@ -44,7 +44,7 @@ Yukarıdaki Şemaya Ait Senaryo ::
 7. x.com dan pdf, text, excel çıktısı istendiğinde api.x.com a istek gider.
 8. Oluşturulan çıktı  json formatında cevap gelir. 
 
-*. kimlik.x.com, api.x.com, payment.x.com da olan tüm işlemler için log.x.com a kayıt atılır.
+- (*) kimlik.x.com, api.x.com, payment.x.com da olan tüm işlemler için log.x.com a kayıt atılır.
 
 
 
