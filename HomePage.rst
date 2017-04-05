@@ -33,7 +33,7 @@ Bu yapı ise Kullanıcıların gördükleri ve kullandıkları yapıdır. API ü
 
 .. image:: ornek.PNG
 
-Yukarıdaki Şemaya Ait Senaryo :
+Yukarıdaki Şemaya Ait Senaryo ::
 
 1. İstekte bulunan URL ClientID ve ClientKey ile birlikte kimlik.x.com a gider. Bunun amacı uı.x.com a gelen isteğin buraya ulaşmasına      izninin olup olmayacağının belirlenmesidir.
 2. kimlik.x.com belirli claimsleri kullanarak UI a bir token üretir. 
