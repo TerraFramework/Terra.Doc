@@ -14,13 +14,13 @@ sql_init.sql dosyasını execute ediniz.
 
 API üzerindeki ConnectionString'i güncelleyiniz.
 
-UI projesi üzerindeki appsettings.json dosyasında,
+UI projesi üzerindeki appsettings.json dosyasında,:
 
  Identity.Authority,Identity.ClientKey,Identity.ClientSecret alanları güncelleyiniz.
   
  API projesinin çalışacağı proje url'ini UI'üzerindeki appsettings'de güncelleyiniz.
 
-API projesi üzerindeki appsettings.json dosyasında,
+API projesi üzerindeki appsettings.json dosyasında,:
 
  Identity.Authority alanları güncelleyiniz.
 
