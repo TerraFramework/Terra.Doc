@@ -37,9 +37,9 @@ Yukarıdaki Şemaya Ait Senaryo ::
 
 1. İstekte bulunan URL ClientID ve ClientKey ile birlikte kimlik.x.com a gider. Bunun amacı uı.x.com a gelen isteğin buraya ulaşmasına      izninin olup olmayacağının belirlenmesidir.
 2. kimlik.x.com belirli claimsleri kullanarak UI a bir token üretir. 
-3. x.com dan herhangi bir ödeme yapılmak istendiğinde payment.x.com istek atılır. 
-5. payment.x.com a gelen istek kimlik.x.com dan gerekli izne sahip mi diye sorgulanır
+3. x.com dan herhangi bir ödeme yapılmak istendiğinde payment.x.com istek atılır.
 4. Gelen token ile birlikte x.com fail,success, reject olarak cevap dönülür.
+5. payment.x.com a gelen istek kimlik.x.com dan gerekli izne sahip mi diye sorgulanır
 6. Gerekli olan token payment.x.com a verilir.
 7. x.com dan pdf, text, excel çıktısı istendiğinde api.x.com a istek gider.
 8. Oluşturulan çıktı  json formatında cevap gelir. 
