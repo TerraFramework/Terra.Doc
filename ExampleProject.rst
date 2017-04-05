@@ -16,7 +16,7 @@ Kurulum
 
 **UI** projesi üzerindeki appsettings.json dosyasında,
 
-- **Identity.Authority**,**Identity.ClientKey**,**Identity.ClientSecret** alanları güncelleyiniz.
+- **Identity.Authority**, **Identity.ClientKey**, **Identity.ClientSecret** alanları güncelleyiniz.
   
 - **API** projesinin çalışacağı proje url'ini UI'üzerindeki appsettings'de güncelleyiniz.
 
