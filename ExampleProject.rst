@@ -5,7 +5,7 @@
 
 indir_ 
 
-.. _indir:http://www.bilgeadam.com/yazilim/terraframework/TerraFramework.Sample.rar
+.. _indir: http://www.bilgeadam.com/yazilim/terraframework/TerraFramework.Sample.rar
 
 Kurulum
 -------
