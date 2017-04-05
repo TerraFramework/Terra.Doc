@@ -3,9 +3,9 @@
 
 Örnek Projeyi aşağıdaki linkten indirirebilirsiniz.
 
-indir_
+indir_ 
 
-.. _İndir:http://www.bilgeadam.com/yazilim/terraframework/TerraFramework.Sample.rar
+.. _indir:http://www.bilgeadam.com/yazilim/terraframework/TerraFramework.Sample.rar
 
 Kurulum
 -------
@@ -16,12 +16,12 @@ API üzerindeki ConnectionString'i güncelleyiniz.
 
 UI projesi üzerindeki appsettings.json dosyasında,
 
- Identity.Authority,Identity.ClientKey,Identity.ClientSecret alanları güncelleyiniz.
+- Identity.Authority,Identity.ClientKey,Identity.ClientSecret alanları güncelleyiniz.
   
- API projesinin çalışacağı proje url'ini UI'üzerindeki appsettings'de güncelleyiniz.
+- API projesinin çalışacağı proje url'ini UI'üzerindeki appsettings'de güncelleyiniz.
 
 API projesi üzerindeki appsettings.json dosyasında,
 
- Identity.Authority alanları güncelleyiniz.
+- Identity.Authority alanları güncelleyiniz.
 
 Projeleri Run edip kullanabilirsiniz.
