@@ -35,7 +35,7 @@ Bu yapı ise Kullanıcıların gördükleri ve kullandıkları yapıdır. API ü
 
 Yukarıdaki Şemaya Ait Senaryo :
 
-   Kullanıcı x.uı.com adresine bir istekte bulunur ve aşağıdaki işlemler yapılır.
+Kullanıcı x.uı.com adresine bir istekte bulunur ve aşağıdaki işlemler yapılır.
 1. İstekte bulunan URL ClientID ve ClientKey ile birlikte kimlik.x.com a gider. Bunun amacı uı.x.com a gelen isteğin buraya ulaşmasına      izninin olup olmayacağının belirlenmesidir.
 2. kimlik.x.com belirli claimsleri kullanarak UI a bir token üretir. 
 3. x.com dan herhangi bir ödeme yapılmak istendiğinde payment.x.com istek atılır. 
