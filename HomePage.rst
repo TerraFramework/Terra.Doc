@@ -43,6 +43,7 @@ Yukarıdaki Şemaya Ait Senaryo ::
 6. Gerekli olan token payment.x.com a verilir.
 7. x.com dan pdf, text, excel çıktısı istendiğinde api.x.com a istek gider.
 8. Oluşturulan çıktı  json formatında cevap gelir. 
+
 *. kimlik.x.com, api.x.com, payment.x.com da olan tüm işlemler için log.x.com a kayıt atılır.
 
 
