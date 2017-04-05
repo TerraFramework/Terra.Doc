@@ -31,5 +31,7 @@ Bu yapı ise Kullanıcıların gördükleri ve kullandıkları yapıdır. API ü
 
 İlk request UI uygulamasına geldikten sonra, otomatik olarak MissionControl üzerine yönlendirilerek Authenticate olması sağlanır. Devamında ise MissionControl üzerinden dönen AccessToken ile, API'lara giderek data alışverişi sağlanır. Devamında kullanıcı aynı sistem içerisindeki başka bir uygulamaya gitmeye çalışırsa yeniden MissionControl üzerine gelir. Bu sefer zaten Authenticate olduğu için, dire AccessToken alarak devam eder. Böylelikle tüm uygulamalar tek bir Authentication ile çalışabilmiş olurlar.
 
+.. image:: ornek.PNG
+
 
 
